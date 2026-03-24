@@ -1,0 +1,12 @@
+[package]
+name = "gdank"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = ["gdank-primitives", "gdank-storage"]
+
+
+[dependencies]
+clap = "4.6.0"
+ratatui = "0.30.0"
