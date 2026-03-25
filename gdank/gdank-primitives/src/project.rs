@@ -2,7 +2,11 @@ use crate::note::Note;
 use crate::task::Task;
 use std::fmt::{Display, Formatter};
 use uuid::Uuid;
+use serde::{Serialize, Deserialize};
 
+
+// Switch to builder pattern to deal with all the optional fields.
+#[derive(Serialize, Deserialize, Default)]
 pub struct Project {
     pub id: String,
     pub name: String,

@@ -453,18 +453,25 @@ version = "0.1.0"
 dependencies = [
  "clap",
  "ratatui",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
 name = "gdank-primitives"
 version = "0.1.0"
 dependencies = [
+ "serde",
  "uuid",
 ]
 
 [[package]]
 name = "gdank-storage"
 version = "0.1.0"
+dependencies = [
+ "gdank-primitives",
+ "serde_json",
+]
 
 [[package]]
 name = "generic-array"
